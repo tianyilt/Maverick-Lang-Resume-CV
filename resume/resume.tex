@@ -78,10 +78,10 @@
 %-------------------------------------------------------------------------------
 %-------------------------------------------------------------------------------
 \section{\hspace{0.25em}\makebox[0.75em][c]{\faGraduationCap} \fangsong\textbf{教育背景}}
-% \datedsubsection{\textbf{华东师范大学（双一流）}\quad \textbf{上海智能教育研究院}\quad \textbf{Ph.D.}}
-% {\quad \textbf{2024.9 \textasciitilde \ 2028.7}}
+\datedsubsection{\textbf{华东师范大学（双一流）}\quad \textbf{上海智能教育研究院}\quad \textbf{Ph.D.}}
+{\quad \textbf{2024.9 \textasciitilde \ 2028.7}}
 \datedsubsection{\textbf{华东师范大学（双一流）}\quad \textbf{计算机科学与技术}\quad \textbf{学术型硕士}}
-{\quad \textbf{2021.9 \textasciitilde \ 2024.7}}
+{\quad \textbf{2021.9 \textasciitilde \ 2024.11}}
     \begin{minipage}[t]{0.40\textwidth}
     	\begin{itemize}
     		\item \kaishu\textbf{一作论文: }3篇CCF-A在投
@@ -99,7 +99,7 @@
     \end{minipage}
 
     \begin{itemize}
-      \item \kaishu\textbf{研究方向: }LLM 跨模态 Agents, 计算机图形学 3DAIGC, 多模态编辑
+      \item \kaishu\textbf{研究方向: }跨模态 LLM 智能体, 多模态图像编辑, 计算机图形学 3DAIGC
     \end{itemize}
 \datedsubsection{\textbf{华东理工大学（双一流学科）}\quad \textbf{数学与应用数学\&计算机科学与技术}\quad \textbf{本科}}
 {\quad \textbf{2017.9 \textasciitilde \ 2021.7}}
@@ -134,7 +134,7 @@
     \begin{itemize}
       % \item \kaishu 规划和落实技术路线。基于飞书制定团队工作流。
       % \item \kaishu 对接公司与华东师范大学计算机学院, 参与初创项目的包装, 通过答辩获得大学生创业雏鹰计划基金资助, 觉群文创玉佛寺基金资助。 
-      \item \kaishu 难点: 大模型做青少年科创存在幻觉问题, 当前工具对用户使用门槛高。解决方法:算法上开发基于RAG的青创大模型来消除幻觉; 设计能够协调检索摘要写报告的多智能体把用户从繁重的检索中解脱, 并以用户易于理解的方式呈现检索结果。开发环境项目网站:\href{http://106.14.61.143:8889/ai_chat}{i-lion}。
+      \item \kaishu 难点: 在青少年科创场景的LLM 智能体对用户使用门槛高,RAG与创新导向业务目标存在gap。解决方法:参考Coze, metagpt等项目, 算法上开发基于RAG的青创大模型来消除幻觉; 设计能够Corrective RAG并行检索摘要写报告的多智能体把用户从繁重的检索中解脱, 并以用户易于理解的方式呈现检索结果。开发环境项目网站:\href{http://106.14.61.143:8889/ai_chat}{i-lion}。
     \end{itemize}
 %-------------------------------------------------------------------------------
 
@@ -142,7 +142,7 @@
 {\large\textbf{2019.7 \textasciitilde \ 2019.8}}
 \role {生成式算法工程师}{实习生}
     \begin{itemize}
-      \item \kaishu 难点:电视台项目需求开放性强。解决方法:用\href{https://zhuanlan.zhihu.com/p/671425463}{工具链}检索任务中SOTA开源项目,Dotfile+Docker部署测试开源项目。解决视频预处理问题。大量测试和改进的工程包括图像生成超分辨率去噪去模糊着色三维人体重建三维姿态估计等。容器化方法被我迁移到\href{https://ecnuvis.net/}{当前课题组}的\href{https://zhuanlan.zhihu.com/p/682477952}{深度学习容器化解决方案}。
+      \item \kaishu 难点:电视台项目需求开放性强。解决方法:用\href{https://zhuanlan.zhihu.com/p/671425463}{工具链}检索任务中SOTA开源项目,DotFile+Docker快速部署测试开源项目。解决视频预处理问题。大量测试和改进的工程包括图像生成超分去噪去模糊着色三维重建与姿态估计等。容器化方法被我迁移到\href{https://ecnuvis.net/}{当前课题组}的\href{https://zhuanlan.zhihu.com/p/682477952}{深度学习容器化解决方案}。
       \item \kaishu 难点:视频动画化不能实时。解决方法, 变成生产者消费者模型, 用Tornado框架构建Buffer异步请求，把视频帧取模分配给多GPU,把fps从5加速到30。
       % \item \kaishu 
     \end{itemize}
@@ -159,8 +159,8 @@
 \section{\hspace{0.25em}\makebox[0.75em][c]{\faFlask} \fangsong\textbf{科研项目}}
 \datedsubsection{\textbf{PromptPlanewalker: Interactive Visual Prompt Engineering \linebreak for Text-to-3D Generation} \ 会议论文VIS2024(在投) \qquad 第一作者}{\textbf{2023.2\textasciitilde \ 2024.3}}
     \begin{itemize}
-    \item[\faThumbTack] \kaishu 任务创新: 文生3D视觉提示工程，该任务侧重于对生成的3D模型的多视图图像进行跨模态评估，以帮助用户选择满意的结果并迭代改进后续提示。
-    \item[\faThumbTack] \kaishu 可视化创新:有效表示提示文本, 3D物体和多维度评分关系的三种D3写的视觉表示。包括提示词推荐词云, 挑结果神器多视图卫星图，以及跨注意力的多视图热图。
+    \item[\faThumbTack] \kaishu 任务创新: 文生3D视觉提示工程，利用LLM Agents引导3D模型生成与跨模态评估。系统多维度反馈生成模型与提示语义的契合度，辅助用户迭代提示以优化模型。
+    \item[\faThumbTack] \kaishu 可视化创新:有效表示提示文本, 3D物体和多维度评分关系的三种D3写的视觉表示。包括提示词推荐词云, 挑结果神器多视图卫星图，以及跨注意力的多视图热图。可视化LLM Agents在跨模态理解过程中对不同视图间交叉注意力，展现了Agents在跨模态理解上的智能决策机制。
     \item[\faThumbTack] \kaishu 系统创新: 利用多视图图像作为评分媒介，通过模型生成和检索来得到3D候选后。多视图混合评分函数从多个角度符合人类直觉地评估3D模型的语义和视觉质量。成果可以直接用于跨模态的vlm打分任务, 用低阶打分消除幻觉,然后llm进行高阶打分对结果进行解释。
         % \item[\faThumbTack] \kaishu 改进了文生3D工具，对输入提示词进行联想,然后使用双分支进行模型生成和使用3D预训练模型进行检索，得到3D候选, 并且用VLM进行多视图评分。提出了Treemap 词云和多视图卫星图等功能，用于快速选择和可视化候选模型。注意力引导的热图可视化了提示词的关键词对生成的模型的不同视图的贡献。
         % \item[\faThumbTack] \kaishu 针对存在问题快速架构问题解决方案, 积极沟通完成论文规划, 然后独立完成FASTAPI后端,部署了5种3D生成模型,包括TripoSR等, 然后用CLIP attention带来局部可解释性以及评分和联想功能的提示词模板。协作完善前端与论文。
@@ -176,12 +176,11 @@
         % \item[\faThumbTack] \kaishu 该模块战略性地指导图像生成过程中的交叉关注地图，确保文本和图像的和谐布局。实践发现注意力结合SegmentAnythin很适合用来提高跨模态的VLM视觉理解。 
     \end{itemize}
 %-------------------------------------------------------------------------------
-\datedsubsection{\textbf{NeuralBionicSyn: Out-of-distribution 3D Shape Synthesis via Implicit Representation \linebreak for Organic Biologically Inspired Design}}{\textbf{2021.9\textasciitilde \ 2023.10}}
-\role {期刊论文TVCG(在投)}{第一作者}
+\datedsubsection{\textbf{NeuralBionicSyn: Out-of-distribution 3D Shape Synthesis via Implicit Representation \linebreak for Organic Biologically Inspired Design} \ 期刊论文TVCG(在投) \qquad 第一作者}{\textbf{2021.9\textasciitilde \ 2023.10}}
     \begin{itemize}
-    \item[\faThumbTack] \kaishu 任务创新: 不同于传统生成任务，该任务专注于训练数据分布外区域的融合语义的生成问题。
+    \item[\faThumbTack] \kaishu 任务创新: 提出分布外生成的任务, 不同于传统生成任务，该任务专注于训练数据分布外区域的融合语义的生成问题。
     \item[\faThumbTack] \kaishu 算法创新: 提出创意生成物求解器来解决分布外生成的黑盒函数多峰优化问题，并理论上证明了生成式仿生设计与分布外生成高度相关。
-    \item[\faThumbTack] \kaishu 系统创新: 系统允许对设计变体进行高阶的探索，从而防止由于过多的生成物候选对象导致用户不感兴趣。
+    \item[\faThumbTack] \kaishu 系统创新: 开发了Vue前端交互界面实现对过多的生成物候选进行挑选的微调。
         % \item[\faThumbTack] \kaishu 提出了神经三维仿生设计算法。将创意仿生设计问题视为基于参考数据集的隐空间分布外生成问题。将生成具有仿生价值的创新形状作为优化问题，在分布外区域进行约束探索，这一过程依赖于混合评分函数以筛选出候选形状集合。研究引入了人在回路的局部流形子空间探索技术，从而使得设计师能够高效地发掘和迭代设计变体。
         % \item[\faThumbTack] \kaishu 独立完成隐式编解码网络模型训练, 生成物求解器运算, Tornado后端, Blender渲染。 合作完成交互式Vue前端的系统实现。
         % \item[\faThumbTack] \kaishu 黑盒的分布外生成可以扩展到其他具有表示空间生成任务, 提取出多样性的局部最优解来得到多样的高质量生成候选。 这段gap经历也启发我改变研究模式, 进行2月一篇的研究转型。
@@ -232,7 +231,8 @@
     \begin{minipage}[t]{0.75\textwidth}
      \raggedright
         \begin{itemize}
-            \item \kaishu\textbf{算法}: PyTorch, Diffusers (熟练), Transformers \textbf{后端}: FastAPI (Agents开发)\linebreak\textbf{前端}: Vue React Three.js (Demo交互) \textbf{运维}:Docker(熟练, 管理员) 
+            \item \kaishu\textbf{算法}: PyTorch, Diffusers (熟练), Transformers ~\textbf{后端}: FastAPI (Agents开发)
+            \item \textbf{前端}: Vue React Three.js (Demo交互) ~~~~~~~~~~~~~\textbf{运维}:Docker(熟练, 管理员) 
         \end{itemize}
     \end{minipage}%
     \begin{minipage}[t]{0.5\textwidth}
